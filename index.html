@@ -8,11 +8,22 @@
 </head>
 <body>
 
- <div class="nav-bar">
+  <div class="nav-bar">
     <h1 class="nav-bar-title">Nav Bar Title</h1>
+
+    <button class="nav-bar-button-left">
+      <span class="disclosure-indicator-left"></span>
+      Nav Bar Button Left
+    </button>
+
+    <button class="nav-bar-button-right">
+      Nav Bar Button Right
+      <span class="disclosure-indicator"></span>
+    </button>
   </div>
 
   <div class="grid">
+
     <div class="full-width spacer"></div>
 
     <button class="half-width">Half-width Button</button>
@@ -21,15 +32,27 @@
 
     <div class="full-width spacer"></div>
 
-    <nav class="button-group full-width">
-      <button>Button in button group <span class="disclosure-indicator"></span></button>
-      <button>Another button in button group <span class="disclosure-indicator"></span></button>
-      <button>And another <span class="disclosure-indicator"></span></button>
+    <nav class="group full-width">
+      <button>Button <span class="disclosure-indicator-pull-right"></span></button>
+      <button>Button <span class="disclosure-indicator-pull-right"></span></button>
+      <button class="button-danger">Dangerous Button <span class="disclosure-indicator-pull-right"></span></button>
     </nav>
 
-    <nav class="button-group full-width">
-      <button class="danger">Dangerous button <span class="disclosure-indicator"></span></button>
-    </nav>
+    <div class="full-width spacer"></div>
+
+    <div class="full-width">
+      <label>Label <input type="text" placeholder="Input"></label>
+      <label>Label <input type="text" placeholder="Input"></label>
+      <label>Label <input type="text" placeholder="Input"></label>
+    </div>
+
+    <div class="full-width">
+      <label>
+        Label
+        <input type="text" placeholder="Full-width input" class="full-width-input">
+      </label>
+    </div>
+
   </div>
 
 </body>
