@@ -38,6 +38,10 @@ body {
   margin: 0.25em;
 }
 
+.third-width {
+  width: calc(33.333% - 0.5em);
+}
+
 .half-width {
   width: calc(50% - 0.5em);
 }
