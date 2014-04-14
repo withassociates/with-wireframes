@@ -15,6 +15,13 @@ body {
   text-align: right;
 }
 
+hr {
+  margin: 2em 0;
+  border: 0;
+  border-top: 2px solid #444;
+  height: 0;
+}
+
 /* Layout */
 
 body {
@@ -235,4 +242,31 @@ input[type="url"] {
   border: 2px solid #444;
   padding: 0.5em 0.5em;
   background: #f4f4f5;
+}
+
+/* Overlays */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background: rgba(245, 245, 245, 0.9);
+}
+
+/* Modals */
+
+.modal {
+  box-sizing: border-box;
+
+  margin: 6em auto;
+  border: 2px solid #444;
+  padding: 2em;
+  width: 80%;
+  max-width: 40em;
+
+  text-align: center;
+  background: white;
 }
