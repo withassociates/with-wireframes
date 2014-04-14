@@ -1,0 +1,153 @@
+/* Typography */
+
+* {
+  font-family: Noteworthy;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+  -webkit-font-smoothing: antialiased;
+}
+
+.align-right {
+  text-align: right;
+}
+
+/* Layout */
+
+body {
+  margin: 0;
+}
+
+.grid {
+  position: relative;
+  padding: 0.25em;
+}
+
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid > * {
+  display: block;
+  float: left;
+  margin: 0.25em;
+}
+
+.half-width {
+  width: calc(50% - 0.5em);
+}
+
+.full-width {
+  width: calc(100% - 0.5em);
+}
+
+.spacer {
+  height: 0.618em;
+}
+
+/* Nav Bar */
+
+.nav-bar {
+  border-bottom: 1px solid #444;
+  line-height: 1;
+}
+
+.nav-bar-title {
+  margin: 0;
+  padding: 1em;
+  font-size: 1.25em;
+  text-align: center;
+}
+
+/* Buttons */
+
+button {
+  position: relative;
+  margin: 0;
+  border: 2px solid #444;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1.5;
+
+  background: #e6e7e8;
+
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+button.danger {
+  background: #e30613;
+  color: white !important;
+}
+
+/* Button Group */
+
+.button-group {
+  padding: 2px 0;
+}
+
+.button-group > a,
+.button-group > button {
+  display: block;
+  position: relative;
+  box-sizing: border-box;
+
+  margin: -2px 0;
+  width: 100%;
+  border: 2px solid #bbb;
+  border-radius: 0;
+  padding: 0.5em 1em;
+
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: left;
+  text-decoration: none;
+
+  color: inherit;
+}
+
+.button-group > button.danger {
+  border-color: #444444;
+  color: white;
+}
+
+/* Badges */
+
+.badge {
+  display: block;
+  position: absolute;
+  top: 0.5em; right: 0.5em;
+  border-radius: 50%;
+  width: 1.5em; height: 1.5em;
+  background: #36a9e1;
+  border: 2px solid #444;
+  color: white;
+  text-align: center;
+}
+
+/* Disclosure Indicator */
+
+.disclosure-indicator {
+  display: block;
+  position: absolute;
+  top: 0; right: 0;
+  width: 32px; height: 100%;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="8.337px" height="13.811px" viewBox="0 0 8.337 13.811"><polygon fill="#1D1D1B" points="1.595,13.811 8.337,6.807 1.583,0 0.012,1.561 5.242,6.831 0,12.276"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+button.danger .disclosure-indicator {
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="8.337px" height="13.811px" viewBox="0 0 8.337 13.811"><polygon fill="white" points="1.595,13.811 8.337,6.807 1.583,0 0.012,1.561 5.242,6.831 0,12.276"/></svg>');
+}
